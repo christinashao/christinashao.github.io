@@ -1,0 +1,178 @@
+.title {
+    font-family: Karla, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+.underline {
+    border: 1.5px solid #000000;
+}
+.description {
+    font-family: Karla, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #5E5E5E;
+}
+
+#experience-section {
+    margin-top: 25px;
+
+    p {
+        margin-top: -10px;
+    }
+}
+
+#experience-heading {
+    .heading-outline {
+        position: absolute;
+    }
+
+    .heading-shadow {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+}
+
+#current {
+    @include transform(rotate(-90deg));
+    margin-top: -12px;
+    margin-left: -80px;
+    display: flex;
+    width: 292px;
+    font-family: Karla, Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+
+    .line-left {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 115px;
+        height: 0px;
+        left: 188.5px;
+        top: 478.02px;
+        border: 0.6px solid $gray;
+    }
+
+    .line-right {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 115px;
+        height: 0px;
+        left: 189px;
+        top: 658px;
+        border: 0.6px solid $gray;
+    }
+}
+
+#berkeleytime {
+    margin-top: 150px;
+
+    .underline {
+        margin-top: 4px;
+        width: 219px;
+    }
+
+    .description {
+        margin-top: 15px;
+    }
+
+    a {
+        color: #5E5E5E;
+        text-decoration: none;
+
+        &:hover {
+            color: #4481E6;
+        }
+    }
+
+    img{
+        margin-top: -22px;
+        width: 290px;
+        height: 175px;
+    }
+}
+
+#webdesign {
+    margin-top: 12px;
+
+    .underline {
+        margin-top: 4px;
+        width: 191px;
+    }
+
+    .description {
+        margin-top: 15px;
+    }
+
+    img {
+        width: 291px;
+        height: 175px;
+    }
+}
+
+#past {
+    position: absolute;
+    width: 34px;
+    height: 21px;
+    left: 207px;
+    top: 693px;
+}
+
+#past {
+    @include transform(rotate(-90deg));
+    margin-top: -772px;
+    margin-left: -175px;
+    display: flex;
+    width: 99px;
+    font-family: Karla, Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+
+    .line-left {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 22px;
+        height: 0px;
+        left: 188.5px;
+        top: 478.02px;
+        border: 0.6px solid $gray;
+    }
+
+    .line-right {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 22px;
+        height: 0px;
+        left: 189px;
+        top: 658px;
+        border: 0.6px solid $gray;
+    }
+}
+
+#sonicwall {
+    .col-4 {
+        padding-right: 0px;
+    }
+    
+    .underline {
+        margin-top: 4px;
+        width: 319px;
+    }
+
+    .description {
+        margin-top: 15px;
+        width: 450px;
+    }
+
+    img {
+        margin-left: 10px;
+        margin-top: 35px;
+        width: 271px;
+        height: 46px;
+    }
+}

@@ -1,0 +1,64 @@
+#education-section {
+    margin-top: 50px;
+
+    #education-heading {
+        .heading-outline {
+            position: absolute;
+        }
+    
+        .heading-shadow {
+            position: absolute;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+    }
+
+    .row:nth-child(2) {
+        margin-top: 140px;
+    }
+    .row:nth-child(4) {
+        margin-top: 40px;
+    }
+
+    .indent {
+        margin-left: 30px;
+    }
+
+    .subtitle {
+        margin-top: 15px;
+        font-family: Karla, Arial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .courses {
+        margin-top: 20px;
+    }
+
+    p {
+        margin-top: -10px;
+        font-family: Karla, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .andmore {
+        font-style: italic;
+    }
+
+    #cal, #chs {
+        text-align: center;
+    }
+
+    #cal img {
+        width: 176px;
+        height: 176px;
+    }
+
+    #chs img {
+        margin-top: 15px;
+        width: 114px;
+        height: 142px;
+    }
+}

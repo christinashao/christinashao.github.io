@@ -1,0 +1,138 @@
+#skills-section {
+    margin-top: 50px;
+
+    .row:nth-child(2) {
+        margin-top: 140px;
+    }
+}
+
+#skills-heading {
+    .heading-outline {
+        position: absolute;
+    }
+
+    .heading-shadow {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+}
+
+#proficient, #familiar {
+    .subheading {
+        margin-bottom: 10px;
+    }
+
+    .skills-row {
+        display: flex;
+        text-align: center;
+        margin-left: 15px;
+        margin-top: 15px;
+
+        .skill {
+            margin-right: 58px;
+            min-width: 80px;
+
+            .label {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+#proficient {
+    .skills-row:nth-child(3) {
+        margin-top: 35px;
+    }
+
+    #java img {
+        width: 58px;
+        height: 76px;
+    }
+
+    #python img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #javascript img {
+        width: 76px;
+        height: 75px;
+    }
+
+    #html img {
+        width: 62px;
+        height: 71px;
+    }
+
+    #css img {
+        width: 66px;
+        height: 71px;
+    }
+
+    #react img {
+        width: 80px;
+        height: 71px;
+    }
+
+    #redux img {
+        width: 77px;
+        height: 73px;
+    }
+
+    #git img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #illustrator img {
+        width: 66px;
+        height: 64px;
+    }
+
+    #indesign img {
+        width: 66px;
+        height: 64px;
+    }
+}
+
+#qualities {
+    text-align: right;
+
+    .subheading {
+        margin-bottom: 5px;
+    }
+
+    .label {
+        margin-top: 15px;
+    }
+}
+
+#familiar {
+    margin-top: 40px;
+
+    #sql img {
+        width: 55px;
+        height: 69px;
+    }
+
+    #cordova img {
+        width: 74px;
+        height: 75px;
+    }
+
+    #unity img {
+        width: 66px;
+        height: 66px;
+    }
+
+    #figma img {
+        width: 46px;
+        height: 69px;
+    }
+
+    #nodejs img {
+        width: 71px;
+        height: 72px;
+    }
+}

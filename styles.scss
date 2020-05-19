@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Regular.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Karla;
+    src: url(fonts/Karla-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+$blue: rgba(86, 204, 242);
+$light-blue: rgba(86, 204, 242, 0.5);
+$orange: rgba(242, 153, 74, 0.5);
+$gray: rgba(0, 0, 0, 0.35);
+$light-gray: rgba(189, 189, 189, 0.5);
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+.comingsoon {
+    margin-top: calc(50vh - 36px);
+    margin-bottom: calc(50vh - 36px);
+    text-align: center;
+    font-family: Karla, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@import "styles/landing";
+
+@import "styles/navbar";
+
+@import "styles/about";
+@import "styles/experience";
+@import "styles/skills";
+@import "styles/education";
+@import "styles/awards";

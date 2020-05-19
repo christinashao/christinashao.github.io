@@ -1,0 +1,108 @@
+#navbar {
+    position: fixed;
+    margin-left: 0px;
+    width: 100vw;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    display: flex;
+}
+
+#nav-home {
+    margin-left: 45px;
+    margin-top: -15px;
+
+    &:hover .highlight {
+        color: $light-gray;
+    }
+
+    .outline {
+        position: absolute;
+        height: 50px;
+        font-family: Karla, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: transparent;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .highlight {
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+        height: 50px;
+        font-family: Karla, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        color: $light-blue;
+    }
+}
+
+#links {
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    margin-top: 6px;
+
+    .outline {
+        position: absolute;
+        font-family: Karla, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: transparent;
+        -webkit-text-stroke: 0.75px black;
+    }
+
+    .highlight {
+        visibility: hidden;
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 3px;
+        font-family: Karla, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: $light-blue;
+    }
+    .active {
+        visibility: visible;
+    }
+}
+
+#nav-about {
+    margin-left: 148px;
+
+    &:hover .highlight {
+        visibility: visible;
+    }
+}
+
+#spacer-1 {
+    margin-left: 64px;
+}
+
+#nav-teaching {
+    margin-left: 50px;
+
+    &:hover .highlight {
+        visibility: visible;
+    }
+}
+
+#spacer-2 {
+    margin-left: 64px;
+}
+
+#nav-blog {
+    margin-left: 82px;
+
+    &:hover .highlight {
+        visibility: visible;
+    }
+}
+
+#spacer-3 {
+    margin-right: 64px;
+}

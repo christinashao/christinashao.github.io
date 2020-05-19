@@ -1,0 +1,702 @@
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla-Italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.comingsoon {
+  margin-top: calc(50vh - 36px);
+  margin-bottom: calc(50vh - 36px);
+  text-align: center;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+#landing {
+  margin-top: calc(50vh - 157px);
+  margin-bottom: calc(50vh - 157px);
+}
+#landing #name {
+  margin: auto;
+  width: 345px;
+  height: 75px;
+}
+#landing #name:hover {
+  cursor: default;
+}
+#landing #name:hover .highlight {
+  color: rgba(189, 189, 189, 0.5);
+}
+#landing #name .outline {
+  position: absolute;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+#landing #name .highlight {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 3px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgba(86, 204, 242, 0.5);
+}
+#landing #about-link:hover, #landing #teaching-link:hover, #landing #blog-link:hover {
+  cursor: pointer;
+}
+#landing #about-link:hover .highlight, #landing #teaching-link:hover .highlight, #landing #blog-link:hover .highlight {
+  visibility: visible;
+}
+#landing #about-link .outline, #landing #teaching-link .outline, #landing #blog-link .outline {
+  position: absolute;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: transparent;
+  -webkit-text-stroke: 0.75px black;
+}
+#landing #about-link .highlight, #landing #teaching-link .highlight, #landing #blog-link .highlight {
+  position: absolute;
+  visibility: hidden;
+  margin-left: 3px;
+  margin-top: 3px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(242, 153, 74, 0.5);
+}
+#landing #about-link {
+  margin: auto;
+  width: 69.88px;
+  margin-top: 10px;
+}
+#landing #teaching-link {
+  margin: auto;
+  width: 103.69px;
+  margin-top: 58px;
+}
+#landing #blog-link {
+  margin: auto;
+  width: 52.59px;
+  margin-top: 106px;
+}
+#landing #social {
+  margin: auto;
+  width: 90px;
+  margin-top: 175px;
+}
+#landing #social .outline {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+#landing #social .highlight {
+  visibility: hidden;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+#landing #social #linkedin:hover, #landing #social #github:hover {
+  cursor: pointer;
+}
+#landing #social #linkedin:hover .highlight, #landing #social #github:hover .highlight {
+  visibility: visible;
+}
+#landing #email {
+  margin: auto;
+  width: 200px;
+  margin-top: 45px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #56ccf2;
+}
+
+#navbar {
+  position: fixed;
+  margin-left: 0px;
+  width: 100vw;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  display: flex;
+}
+
+#nav-home {
+  margin-left: 45px;
+  margin-top: -15px;
+}
+#nav-home:hover .highlight {
+  color: rgba(189, 189, 189, 0.5);
+}
+#nav-home .outline {
+  position: absolute;
+  height: 50px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+#nav-home .highlight {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  height: 50px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgba(86, 204, 242, 0.5);
+}
+
+#links {
+  display: flex;
+  position: absolute;
+  right: 5vw;
+  margin-top: 6px;
+}
+#links .outline {
+  position: absolute;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: transparent;
+  -webkit-text-stroke: 0.75px black;
+}
+#links .highlight {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(86, 204, 242, 0.5);
+}
+#links .active {
+  visibility: visible;
+}
+
+#nav-about {
+  margin-left: 148px;
+}
+#nav-about:hover .highlight {
+  visibility: visible;
+}
+
+#spacer-1 {
+  margin-left: 64px;
+}
+
+#nav-teaching {
+  margin-left: 50px;
+}
+#nav-teaching:hover .highlight {
+  visibility: visible;
+}
+
+#spacer-2 {
+  margin-left: 64px;
+}
+
+#nav-blog {
+  margin-left: 82px;
+}
+#nav-blog:hover .highlight {
+  visibility: visible;
+}
+
+#spacer-3 {
+  margin-right: 64px;
+}
+
+.row {
+  width: 100vw;
+}
+
+#about {
+  margin: auto;
+  margin-top: 128px;
+  width: 136.73px;
+  height: 59px;
+}
+#about .outline {
+  position: absolute;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+#about .highlight {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 3px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: rgba(86, 204, 242, 0.5);
+}
+
+#intro-section {
+  margin-left: 0px;
+}
+#intro-section #intro {
+  margin-top: 78px;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+}
+#intro-section #contact {
+  margin-top: 23px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5E5E5E;
+  text-align: center;
+}
+#intro-section #contact span {
+  color: #56ccf2;
+}
+
+.heading-outline {
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+.heading-shadow {
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+  color: rgba(242, 153, 74, 0.5);
+}
+
+.heading-outline, .heading-shadow {
+  padding-top: 55px;
+}
+
+.subheading {
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.label {
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.smaller-label {
+  font-size: 14px;
+}
+
+#footer {
+  height: 205px;
+}
+
+.title {
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.underline {
+  border: 1.5px solid #000000;
+}
+
+.description {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #5E5E5E;
+}
+
+#experience-section {
+  margin-top: 25px;
+}
+#experience-section p {
+  margin-top: -10px;
+}
+
+#experience-heading .heading-outline {
+  position: absolute;
+}
+#experience-heading .heading-shadow {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+#current {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-top: -12px;
+  margin-left: -80px;
+  display: flex;
+  width: 292px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.35);
+}
+#current .line-left {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 115px;
+  height: 0px;
+  left: 188.5px;
+  top: 478.02px;
+  border: 0.6px solid rgba(0, 0, 0, 0.35);
+}
+#current .line-right {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 115px;
+  height: 0px;
+  left: 189px;
+  top: 658px;
+  border: 0.6px solid rgba(0, 0, 0, 0.35);
+}
+
+#berkeleytime {
+  margin-top: 150px;
+}
+#berkeleytime .underline {
+  margin-top: 4px;
+  width: 219px;
+}
+#berkeleytime .description {
+  margin-top: 15px;
+}
+#berkeleytime a {
+  color: #5E5E5E;
+  text-decoration: none;
+}
+#berkeleytime a:hover {
+  color: #4481E6;
+}
+#berkeleytime img {
+  margin-top: -22px;
+  width: 290px;
+  height: 175px;
+}
+
+#webdesign {
+  margin-top: 12px;
+}
+#webdesign .underline {
+  margin-top: 4px;
+  width: 191px;
+}
+#webdesign .description {
+  margin-top: 15px;
+}
+#webdesign img {
+  width: 291px;
+  height: 175px;
+}
+
+#past {
+  position: absolute;
+  width: 34px;
+  height: 21px;
+  left: 207px;
+  top: 693px;
+}
+
+#past {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-top: -772px;
+  margin-left: -175px;
+  display: flex;
+  width: 99px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.35);
+}
+#past .line-left {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 22px;
+  height: 0px;
+  left: 188.5px;
+  top: 478.02px;
+  border: 0.6px solid rgba(0, 0, 0, 0.35);
+}
+#past .line-right {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 22px;
+  height: 0px;
+  left: 189px;
+  top: 658px;
+  border: 0.6px solid rgba(0, 0, 0, 0.35);
+}
+
+#sonicwall .col-4 {
+  padding-right: 0px;
+}
+#sonicwall .underline {
+  margin-top: 4px;
+  width: 319px;
+}
+#sonicwall .description {
+  margin-top: 15px;
+  width: 450px;
+}
+#sonicwall img {
+  margin-left: 10px;
+  margin-top: 35px;
+  width: 271px;
+  height: 46px;
+}
+
+#skills-section {
+  margin-top: 50px;
+}
+#skills-section .row:nth-child(2) {
+  margin-top: 140px;
+}
+
+#skills-heading .heading-outline {
+  position: absolute;
+}
+#skills-heading .heading-shadow {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+#proficient .subheading, #familiar .subheading {
+  margin-bottom: 10px;
+}
+#proficient .skills-row, #familiar .skills-row {
+  display: flex;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+#proficient .skills-row .skill, #familiar .skills-row .skill {
+  margin-right: 58px;
+  min-width: 80px;
+}
+#proficient .skills-row .skill .label, #familiar .skills-row .skill .label {
+  margin-top: 5px;
+}
+
+#proficient .skills-row:nth-child(3) {
+  margin-top: 35px;
+}
+#proficient #java img {
+  width: 58px;
+  height: 76px;
+}
+#proficient #python img {
+  width: 75px;
+  height: 75px;
+}
+#proficient #javascript img {
+  width: 76px;
+  height: 75px;
+}
+#proficient #html img {
+  width: 62px;
+  height: 71px;
+}
+#proficient #css img {
+  width: 66px;
+  height: 71px;
+}
+#proficient #react img {
+  width: 80px;
+  height: 71px;
+}
+#proficient #redux img {
+  width: 77px;
+  height: 73px;
+}
+#proficient #git img {
+  width: 65px;
+  height: 65px;
+}
+#proficient #illustrator img {
+  width: 66px;
+  height: 64px;
+}
+#proficient #indesign img {
+  width: 66px;
+  height: 64px;
+}
+
+#qualities {
+  text-align: right;
+}
+#qualities .subheading {
+  margin-bottom: 5px;
+}
+#qualities .label {
+  margin-top: 15px;
+}
+
+#familiar {
+  margin-top: 40px;
+}
+#familiar #sql img {
+  width: 55px;
+  height: 69px;
+}
+#familiar #cordova img {
+  width: 74px;
+  height: 75px;
+}
+#familiar #unity img {
+  width: 66px;
+  height: 66px;
+}
+#familiar #figma img {
+  width: 46px;
+  height: 69px;
+}
+#familiar #nodejs img {
+  width: 71px;
+  height: 72px;
+}
+
+#education-section {
+  margin-top: 50px;
+}
+#education-section #education-heading .heading-outline {
+  position: absolute;
+}
+#education-section #education-heading .heading-shadow {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+#education-section .row:nth-child(2) {
+  margin-top: 140px;
+}
+#education-section .row:nth-child(4) {
+  margin-top: 40px;
+}
+#education-section .indent {
+  margin-left: 30px;
+}
+#education-section .subtitle {
+  margin-top: 15px;
+  font-family: Karla, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+#education-section .courses {
+  margin-top: 20px;
+}
+#education-section p {
+  margin-top: -10px;
+  font-family: Karla, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+#education-section .andmore {
+  font-style: italic;
+}
+#education-section #cal, #education-section #chs {
+  text-align: center;
+}
+#education-section #cal img {
+  width: 176px;
+  height: 176px;
+}
+#education-section #chs img {
+  margin-top: 15px;
+  width: 114px;
+  height: 142px;
+}
+
+#awards-section {
+  margin-top: 50px;
+}
+#awards-section #awards-heading .heading-outline {
+  position: absolute;
+}
+#awards-section #awards-heading .heading-shadow {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+#awards-section .row:nth-child(2) {
+  margin-top: 140px;
+}
+#awards-section .row:nth-child(n+2) {
+  margin-bottom: 25px;
+}
+#awards-section .award {
+  padding-right: 4px;
+  font-family: Karla, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: right;
+}
+#awards-section .org {
+  font-family: Karla, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}

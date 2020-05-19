@@ -1,0 +1,39 @@
+#awards-section {
+    margin-top: 50px;
+
+    #awards-heading {
+        .heading-outline {
+            position: absolute;
+        }
+    
+        .heading-shadow {
+            position: absolute;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+    }
+
+    .row:nth-child(2) {
+        margin-top: 140px;
+    }
+
+    .row:nth-child(n+2) {
+        margin-bottom: 25px;
+    }
+
+    .award {
+        padding-right: 4px;
+        font-family: Karla, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    .org {
+        font-family: Karla, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
